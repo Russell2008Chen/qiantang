@@ -83,10 +83,8 @@ export class common extends Component {
             this.waterRippleNode.active = true;
             this.waterRippleAnimation = this.waterRippleNode.getComponent(Animation);
         }
-        // 激活鱼节点
-        if (this.fishComponent) {
-            this.fishComponent.node.active = true;
-        }
+
+        this.fishComponent.node.active = true;
         
         // 初始化音频源组件
         this.audioSource = this.node.getComponent(AudioSource);
