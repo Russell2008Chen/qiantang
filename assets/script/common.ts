@@ -529,7 +529,6 @@ export class common extends Component {
                 interfaceNode.active = false;
             }
         }
-        console.log('隐藏所有主界面');
     }
 
     // 显示指定的界面（通过节点引用）
@@ -539,7 +538,6 @@ export class common extends Component {
             this.hideAllInterfaces();
             // 显示目标界面
             targetInterface.active = true;
-            console.log('显示界面:', targetInterface.name);
         }
     }
 

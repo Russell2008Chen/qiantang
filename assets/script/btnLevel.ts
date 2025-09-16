@@ -31,9 +31,7 @@ export class btnLevel extends Component {
     start() {
         // 初始化音频源组件
         this.audioSource = this.node.getComponent(AudioSource);
-        if (!this.audioSource) {
-            this.audioSource = this.node.addComponent(AudioSource);
-        }
+        this.audioSource = this.node.addComponent(AudioSource);
         
         // 为按钮添加点击事件监听
         this.node.on('click', this.onButtonClick, this);
